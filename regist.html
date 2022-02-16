@@ -1,0 +1,65 @@
+<html>
+<head>
+<title> Registration Form </title>
+    <body> 
+    <link rel="stylesheet" type="text/css " href="hhh.css"/>
+    <div class="loginbox">
+        <img src="koko.jpeg" class="avatar">
+        <h1>Registration Form</h1>
+        <form name="Register">
+            <p> Choose your Username</p>
+            <input type="text" name="" placeholder="Enter Username">
+            <p> Create your Password</p>
+            <input type="password" name="pes" placeholder="Enter Password">
+            <p>Enter your Email</p>
+            <input type="text" id="mail" placeholder="Enter Email">
+            <p>Enter date of birth</p>
+            <input type="date" name="" placeholder="Enter date">
+
+           <input type="button" onclick="check(this .form)" ; name="" value="Submit"  > 
+             <a  href="login page.html" >Already have an account?  
+                 
+        </form>
+<script language="javascript">
+function check(form ){
+var email= document.getElementById("mail").value;
+var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+if(email.match(pattern)){
+    location.href='farghalii.html'
+
+
+}
+else{
+
+    alert("Please Enter a Valid Email")
+}
+
+
+if(document.Register.pes.value.length<6)
+{
+    alert("Password Must Be longer than 6 characters")
+
+}
+else{
+    location.href='farghalii.html'
+
+}
+}
+
+
+
+
+
+
+</script>
+
+
+
+ 
+
+
+    </div>
+    
+    </body>
+    </head>
+    </html>

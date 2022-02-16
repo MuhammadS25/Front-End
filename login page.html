@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>login page </title>
+    <body> 
+    <link rel="stylesheet" type="text/css " href="stylesheet.css"/>
+    <div class="loginbox">
+        <img src="C:\Users\EGYPT\Desktop\Web trainning\koko.jpeg" class="avatar">
+        <h1>Login Here</h1>
+        <form name="login">
+            <p>Username</p>
+            <input type="text" name="nome" placeholder="Enter Username" id="name" >
+            <p>Password</p>
+            <input type="password" name="pes"  placeholder="Enter Password" id="pas">
+           <input type="button"  onclick="check(this.form)"  value="Login"/> 
+         <a href="regist.html" >Don't have an account? <br>
+
+              
+        </form>
+    </div>
+
+<script language ="javascript">
+     function   check(form){
+            
+              
+             if(document.login.nome.value==="admin" && document.login.pes.value==="123456")
+             {
+                 location.href='admin page.html'
+               }
+               else if(document.login.nome.value==''&&document.login.pes.value==''){
+                alert('Username and Password are  empty')
+
+
+               }
+
+ if(document.login.pes.value.length<6)
+{
+    alert("Password Must Be longer than 6 characters")
+
+}
+else if(document.login.nome.value==="admin" && document.login.pes.value==="123456")
+             {
+                 location.href='admin page.html'
+               }
+else{
+    location.href='farghalii.html'
+
+}
+
+           }
+
+           
+       </script>    
+      
+
+
+    
+    </body>
+    </head>
+    </html>
