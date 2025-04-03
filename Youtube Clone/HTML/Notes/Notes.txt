@@ -1,0 +1,147 @@
+HTML basics:
+
+    Every html element has an opening tag and a closing tag.
+    
+    inside the opening tag there are attributes named html attributes like class, id, href, src, etc.
+    
+    html attributes modifies how an html element works.
+    
+    target="_blank" opens the link in a new tab
+
+    <a href="http://www.google.com" target="_blank">Google</a>
+
+    extra spaces are removed by the browser for example:
+    <p>   this is a    paragraph   </p> will be displayed as:
+    this is a paragraph
+
+    extra lines are also removed by the browser for example:
+    <p>
+    this is a paragraph
+    </p> will be displayed as:
+    this is a paragraph 
+
+    <br> creates a new line
+
+    <hr> creates a horizontal line
+
+CSS basics:
+
+    css is a language for styling html elements.
+
+    selectors it tells the browser which elements to style.
+
+    properties it tells the browser how to style the selected elements.
+
+    specificity is how important a css rule is. more detailed selectors are more important.
+
+    transitions are how long it takes for an element to change from one style to another.
+
+    __when setting transitions we select the element, the property we want to change and the duration of the transition.
+
+    putting transition on the button class not inside :hover will not work because :hover is a pseudo class.
+
+    shadow box has 4 properties: x, y, blur, color
+
+    we can replace border: solid 1px; with border-width: 1px; border-style: solid;
+
+    Use button.joinbtn if you're styling a <button> element with a specific class.
+    Use button .joinbtn only if .joinbtn is inside the <button> as a separate element.
+
+    Use button.joinbtn if you're styling a <button> element with a specific class.
+    Use button .joinbtn only if .joinbtn is inside the <button> as a separate element.
+
+    CSS box model: content, padding, border, margin
+
+    margin is outside the border, padding is inside the border
+
+    margin is the space outside the border, padding is the space inside the border
+
+    in devtools computed tab, displays the final style of the element(margin, padding, border)
+
+    browser default behavior is to align text inside different buttons with each other.
+
+    Text:
+
+    to make a text use elipse, use text-overflow: ellipsis; and white-space: nowrap; and overflow: hidden;
+
+    to make a text wrap use word-wrap: break-word;
+
+    html entity codes are used to insert special characters in html. like a middle dot is &#183;
+
+    <p> has a default top and bottom margin of 1em (16px)
+
+    text elements:
+    span is the most common text element as it does not have any special meaning or styling.
+    u is for underlined text
+    em is for emphasized text
+    strong is for bold text
+    del is for deleted text
+    ins is for inserted text
+    small is for smaller text
+
+    and many more
+
+    we can add a class to an element to style it. like <span class="important">important</span>
+
+    void elements are elements that do not have a closing tag. like <hr>, <link>, <meta> and <br>
+
+    href takes url or relative or absolute path.
+
+    Images:
+
+    when setting image width then height is set automatically. when setting image height then width is set automatically.
+
+    to make an image responsive use max-width: 100%; max-height: 100%;
+
+    <img> has special css properties like width, height, max-width, max-height, min-width, min-height, object-fit, object-position
+
+
+    CSS Display Properties:
+
+    block elements takes up the full width of the parent element and starts on a new line.
+    inline elements takes up the width of the content and starts on the same line.
+    inline-block elements takes up the width of the content and starts on the same line.
+    none elements takes up no width and starts on the same line.
+    flex elements take up the width of the parent element and start on the same line.
+    grid elements take up the width of the parent element and start on the same line.
+    table elements take up the width of the parent element and start on the same line.
+    table-row elements take up the width of the parent element and start on the same line.
+
+
+    grid keeps alignment, inline-block doesn't.
+    incase there are more elements than grid-template-columns values it wraps in a new line
+
+    fore example grid-template-columns: 100px 100px 100px;
+    and we have five divs it will be 3 and 2 in a new line
+
+    fr means free space it takes the remaining space
+
+    in case we have grid-template-columns: 1fr 2fr; it will be splitted into 1/3 and 2/3
+
+    __when dealing with grid avoid forcing elements width to make it responsive.
+
+    flex similar to grid flex: 1; is equal to 1fr but unlike grid(rigid styling sticks to order of elements) flex makes each elment with it's flex value
+
+    __ flex-shrink:0; don't shrink
+    __ width: 0; shrink
+
+
+    Position:
+    difference between position fixed and absolute is
+    fixed -> browser window(visable area of the screen) - moves while scroll
+    absolute -> page (might get hidden while scorlling) - doesn't move while scrolling
+
+    you can make elements like counter element in thumbnail by putting an element with position absolute inside element with position fixed (it's position is relative to element with fixed position)
+
+    same effect but relative + absolute makes elements in corners but with normal elements not fixed or sticky ones
+
+
+    __ when using position relative elements with relative positions starts to be on top of elements before it, so we should use z-index when using position relative
+
+    __ when creating tooltips use opacity and visability for smooth transition instead of using display (display cannot be used with transition)
+    visability -> to ensure only when we hover over the elment not the tooltip itself ( can be replaced wiht pointer-events: none;)
+    opacity -> smooth transition
+
+
+    __ Inheritence most likely works with text properties
+

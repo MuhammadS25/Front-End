@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <i class="fa-solid fa-bars"></i>
+            <img class="y-logo" src="Images/youtube-logo.svg" alt="youtube-logo">
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <span class="tooltip">Search</span>
+            </button>
+            <button class="voice-search-btn">
+                <i class="fa-solid fa-microphone voice-search-icon"></i>
+                <span class="tooltip">Search with voice</span>
+            </button>
+        </div>
+        <div class="right-section">
+            <i class="fa-solid fa-video"></i>
+            <div class="notifications-icon">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-count">3</span>
+            </div>
+            <img class="my-channel" src="Images/my-channel.jpeg" alt="my-channel">
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="Images/home.svg" alt="Home">
+            <span>Home</span>
+        </div>
+        <div class="sidebar-link">
+            <img src="Images/explore.svg" alt="Explore">
+            <span>Explore</span>
+        </div>
+        <div class="sidebar-link">
+            <img src="Images/subscriptions.svg" alt="Subscriptions">
+            <span>Subscription</span>
+        </div>
+        <div class="sidebar-link">
+            <img src="Images/originals.svg" alt="Originals">
+            <span>Originals</span>
+        </div>
+        <div class="sidebar-link">
+            <img src="Images/youtube-music.svg" alt="Music">
+            <span>Youtube Music</span>
+        </div>
+        <div class="sidebar-link">
+            <img src="Images/library.svg" alt="Library">
+            <span>Library</span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="videos-grid">
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Images/thumbnail-1.webp" alt="Youtube">
+                    <div class="video-time">
+                        14:20
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-img">
+                        <img class="profile-img" src="Images/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Talking Tech and <strong>AI with Google</strong> CEO Sundar Pichai!
+                        </p>
+                        <p class="channel-name">
+                            <a class="channel-link" href="https://www.youtube.com/c/mkbhd">
+                                Marques Brownlee
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            3.4M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Images/thumbnail-2.webp" alt="Youtube">
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-img">
+                        <img class="profile-img" src="Images/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Try not to Laugh Challenge
+                        </p>
+                        <p class="channel-name">
+                            <a class="channel-link" href="https://www.youtube.com/c/markiplier">
+                                Markiplier </a>
+                        </p>
+                        <p class="video-stats">
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Images/thumbnail-3.webp" alt="Youtube">
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-img">
+                        <img class="profile-img" src="Images/channel-3.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                        <p class="channel-name">
+                            <a class="channel-link" href="https://www.youtube.com/c/veritasium">
+                                Veritasium
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            18M views &#183; 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Images/thumbnail-5.webp" alt="Youtube">
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-img">
+                        <img class="profile-img" src="Images/channel-4.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="channel-name">
+                            <a class="channel-link" href="https://www.youtube.com/c/CSDojo">
+                                CS Dojo
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            519K views &#183; 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Images/thumbnail-6.webp" alt="Youtube">
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-img">
+                        <img class="profile-img" src="Images/channel-6.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Anything You Can Fit In The Circle I'll Pay For
+                        </p>
+                        <p class="channel-name">
+                            <a class="channel-link" href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
+                                MrBeast
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            141M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Images/thumbnail-7.webp" alt="Youtube">
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-img">
+                        <img class="profile-img" src="Images/channel-5.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Why Planes Don't Fly Over Tibet
+                        </p>
+                        <p class="channel-name">
+                            <a class="channel-link" href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww">
+                                RealLifeLore
+                            </a>
+                        </p>
+                        <p class="video-stats">
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
+
+
+<!-- <picture>
+        <source media="(max-width: 600px)" srcset="./Images/thumbnail-3.webp">
+        <source media="(max-width: 1000px)" srcset="Images/thumbnail-2.webp">
+        <img src="Images/thumbnail-1.webp" alt="Youtube">
+    </picture> -->

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("./Intro/Fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("./Intro/Fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("./Intro/Fonts/Roboto-SemiBold.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BungeeTint';
+    src: url("./Intro/Fonts/BungeeTint-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body {
+    font-family: Roboto, BungeeTint;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: rgb(240, 240, 240);
+}
